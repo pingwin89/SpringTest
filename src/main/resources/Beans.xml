@@ -17,4 +17,6 @@
 	<bean id="bar" class="pl.pawc.Bar" scope="singleton">
 	</bean>
 
+	<bean class="pl.pawc.InitHelloWorld" />
+
 </beans>
