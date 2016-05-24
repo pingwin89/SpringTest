@@ -11,4 +11,12 @@ public class HelloWorld{
 		System.out.println("Spring: "+message);
 	}
 
+	public void init(){
+		System.out.println("HelloWorld is going through init");
+	}
+
+	public void destroy(){
+		System.out.println("HelloWorld will destroy now");
+	}
+
 }

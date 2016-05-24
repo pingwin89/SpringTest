@@ -12,4 +12,12 @@ public class Bar{
 		System.out.println("Bar: "+message);
 	}	
 
+	public void init(){
+		System.out.println("Bar is going through init");
+	}
+	
+	public void destroy(){
+		System.out.println("Bar will destroy now");
+	}
+
 }
