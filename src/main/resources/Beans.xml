@@ -8,4 +8,11 @@
 	<bean id="helloWorld" class="pl.pawc.HelloWorld">
 		<property name="message" value="Hello Spring!"/>
 	</bean>
+
+	<bean id="foo" class="pl.pawc.Foo" scope="prototype">
+	</bean>
+
+	<bean id="bar" class="pl.pawc.Bar" scope="singleton">
+	</bean>
+
 </beans>
