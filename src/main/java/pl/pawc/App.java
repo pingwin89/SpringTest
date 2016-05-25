@@ -37,6 +37,10 @@ public class App{
 		TextEditor2 te2 = (TextEditor2) context.getBean("textEditor2");
 		te2.spellCheck();
 
+		System.out.println("Injecting Inner Beans");
+		TextEditor3 te3 = (TextEditor3) context.getBean("textEditor3");
+		te3.spellCheck();
+
 		context.registerShutdownHook();
 
 	}
