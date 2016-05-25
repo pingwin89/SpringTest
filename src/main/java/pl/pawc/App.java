@@ -6,6 +6,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App{
   public static void main(String[] args){
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");			
+
+		System.out.println("Bean inheritance");
   	HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
 		HelloIndia obj2 = (HelloIndia) context.getBean("helloIndia");
 		obj.getMessage();
@@ -26,6 +28,10 @@ public class App{
 		bar1.getMessage();
 		Bar bar2 = (Bar) context.getBean("bar");
 		bar2.getMessage();
+
+		System.out.println("Constructor-based DI");
+		TextEditor te = (TextEditor) context.getBean("textEditor");
+		te.spellCheck();
 
 		context.registerShutdownHook();
 

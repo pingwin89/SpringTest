@@ -23,4 +23,11 @@
 
 	<bean class="pl.pawc.InitHelloWorld" />
 
+	<bean id="textEditor" class="pl.pawc.TextEditor">
+		<constructor-arg ref="spellChecker"/>
+	</bean>
+
+	<bean id="spellChecker" class="pl.pawc.SpellChecker">
+	</bean>	
+
 </beans>
