@@ -11,6 +11,10 @@
 		<property name="message" value="Hello Spring!"/>
 	</bean>
 
+	<bean id="helloIndia" class="pl.pawc.HelloIndia" parent="helloWorld">
+		<property name="message2" value="Hello India!"/>
+	</bean>
+
 	<bean id="foo" class="pl.pawc.Foo" scope="prototype">
 	</bean>
 

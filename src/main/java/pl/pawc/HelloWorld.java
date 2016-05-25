@@ -8,7 +8,7 @@ public class HelloWorld{
 	}
 
 	public void getMessage(){
-		System.out.println("Spring: "+message);
+		System.out.println("HelloWorld message: "+message);
 	}
 
 	public void init(){
