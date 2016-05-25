@@ -30,4 +30,8 @@
 	<bean id="spellChecker" class="pl.pawc.SpellChecker">
 	</bean>	
 
+	<bean id="textEditor2" class="pl.pawc.TextEditor2">
+		<property name="spellChecker" ref="spellChecker"/>
+	</bean>
+
 </beans>

@@ -33,6 +33,10 @@ public class App{
 		TextEditor te = (TextEditor) context.getBean("textEditor");
 		te.spellCheck();
 
+		System.out.println("Setter-based DI");
+		TextEditor2 te2 = (TextEditor2) context.getBean("textEditor2");
+		te2.spellCheck();
+
 		context.registerShutdownHook();
 
 	}
