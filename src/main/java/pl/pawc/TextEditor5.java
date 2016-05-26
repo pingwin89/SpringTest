@@ -1,6 +1,6 @@
 package pl.pawc;
-
-public class TextEditor2{
+//autowiring by type
+public class TextEditor5{
 
 	private SpellChecker spellChecker;
 

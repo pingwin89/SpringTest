@@ -51,8 +51,11 @@ public class App{
         
         System.out.println("Autowiring by name");
         TextEditor4 te4 = (TextEditor4) context.getBean("textEditor4");
-        te.spellCheck();
+        te4.spellCheck();
         
+        System.out.println("Autowiring by type");
+        TextEditor5 te5 = (TextEditor5) context.getBean("textEditor5");
+        te5.spellCheck();
 		context.registerShutdownHook();
 
 	}
