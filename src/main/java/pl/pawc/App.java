@@ -40,7 +40,15 @@ public class App{
 		System.out.println("Injecting Inner Beans");
 		TextEditor3 te3 = (TextEditor3) context.getBean("textEditor3");
 		te3.spellCheck();
+    
+        System.out.println("Injecting collections");
+        JavaCollection jc = (JavaCollection) context.getBean("javaCollection");
 
+        jc.getAddressList();
+        jc.getAddressSet();
+        jc.getAddressMap();
+        jc.getAddressProp();
+        
 		context.registerShutdownHook();
 
 	}

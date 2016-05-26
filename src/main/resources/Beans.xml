@@ -16,9 +16,11 @@
 	</bean>
 
 	<bean id="foo" class="pl.pawc.Foo" scope="prototype">
+            <property name="message" value="foo message"/>
 	</bean>
 
 	<bean id="bar" class="pl.pawc.Bar" scope="singleton">
+            <property name="message" value="bar message"/>
 	</bean>
 
 	<bean class="pl.pawc.InitHelloWorld" />
@@ -39,5 +41,52 @@
 			<bean id="spellChecker2" class="pl.pawc.SpellChecker"/>
 		</property>
 	</bean>
+    
+    <bean id="javaCollection" class="pl.pawc.JavaCollection">
+        
+        <property name="addressList">
+            <list>
+                <value>Kielce</value>
+                <value>Szczecinek</value>
+                <value>Katowice</value>
+                <value>Katowice</value>
+                <ref bean="foo"/>
+                <ref bean="bar"/>
+            </list>
+        </property>
+        
+        <property name="addressSet">
+            <set>
+                <value>Kielce</value>
+                <value>Szczecinek</value>
+                <value>Katowice</value>
+                <value>Katowice</value>
+                <ref bean="foo"/>
+                <ref bean="bar"/>
+            </set>
+        </property>
+        
+        <property name="addressMap">
+            <map>
+                <entry key="1" value="Kielce"/>
+                <entry key="2" value="Szczecinek"/>
+                <entry key="3" value="Katowice"/>
+                <entry key="4" value="Katowice"/>
+                <entry key="5" value-ref="foo"/>
+                <entry key="6" value-ref="bar"/>
+            </map>
+        </property>
+                        
+        <property name="addressProp">
+            <props>
+                <prop key="one">Kielce</prop>
+                <prop key="two">Szczecinek</prop>
+                <prop key="three">Katowice</prop>
+                <prop key="four">Katowice</prop>
+            </props>
+        </property>
+                        
+    </bean>
+    
 
 </beans>
