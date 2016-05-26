@@ -49,6 +49,10 @@ public class App{
         jc.getAddressMap();
         jc.getAddressProp();
         
+        System.out.println("Autowiring by name");
+        TextEditor4 te4 = (TextEditor4) context.getBean("textEditor4");
+        te.spellCheck();
+        
 		context.registerShutdownHook();
 
 	}
