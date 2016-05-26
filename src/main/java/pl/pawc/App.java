@@ -57,6 +57,10 @@ public class App{
         TextEditor5 te5 = (TextEditor5) context.getBean("textEditor5");
         te5.spellCheck();
 		context.registerShutdownHook();
+    
+        System.out.println("Autowiring by constructor");
+        TextEditor6 te6 = (TextEditor6) context.getBean("textEditor6");
+        te5.spellCheck();
 
 	}
 }

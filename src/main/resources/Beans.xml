@@ -90,5 +90,6 @@
     
     <bean id="textEditor4" class="pl.pawc.TextEditor4" autowire="byName"/>
     <bean id="textEditor5" class="pl.pawc.TextEditor5" autowire="byType"/>
+    <bean id="textEditor6" class="pl.pawc.TextEditor6" autowire="constructor"/>
     
 </beans>
